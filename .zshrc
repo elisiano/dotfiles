@@ -125,7 +125,7 @@ alias fix_dns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 alias restart_vpn='sudo killall -9 pritunl-openvpn'
 
 
-source ~/.iterm2_shell_integration.zsh
+test -f ~/.iterm2_shell_integration.zsh && source ~/.iterm2_shell_integration.zsh
 
 function setup_k8s_home() {
   export KUBECONFIG=$HOME/.kube/k8s-home.kubeconfig

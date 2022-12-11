@@ -5,6 +5,7 @@
   editor = vi
   excludesfile = ~/.gitignore
   autocrlf = input
+  pager = less -+F -+X
 [color]
   branch = auto
   diff = auto

@@ -2,6 +2,7 @@
   name = Elisiano Petrini
   email = elisiano@gmail.com
 [core]
+  ;editor = code --wait
   editor = vi
   excludesfile = ~/.gitignore
   autocrlf = input

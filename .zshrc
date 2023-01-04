@@ -132,8 +132,9 @@ function setup_k8s_home() {
 }
 alias kh='kubectl --kubeconfig $HOME/.kube/k8s-home.kubeconfig'
 
-export PATH=$HOME/git/tools/syscript/bin:$PATH
+# export PATH=$HOME/git/tools/syscript/bin:$PATH
 export PATH="${PATH}:${HOME}/.krew/bin"
+export PATH="${PATH}:${HOME}/Library/Python/3.10/bin" # this is where pip3 installs user packages
 export GPG_TTY=$(tty)
 export CLOUDSDK_PYTHON_SITEPACKAGES=1 # needed to use numpy from python installed via asdf
 export KUBECTL_EXTERNAL_DIFF="colordiff -N -u"
